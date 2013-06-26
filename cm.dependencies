@@ -1,7 +1,8 @@
 [
   {
     "repository": "android_device_amazon_otter-common",
-    "target_path": "device/amazon/otter-common"
+    "target_path": "device/amazon/otter-common",
+    "branch": "refs/tags/cm-10.1.0.1"
   },
   {
     "repository": "android_device_amazon_omap4-common",
@@ -9,7 +10,8 @@
   },
   {
     "repository": "android_kernel_amazon_otter-common",
-    "target_path": "kernel/amazon/otter-common"
+    "target_path": "kernel/amazon/otter-common",
+    "branch": "refs/tags/cm-10.1.0.1"
   }
 ]
 
