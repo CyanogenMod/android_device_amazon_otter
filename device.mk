@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/fstab.otter:/root/fstab.omap4430 \
     $(DEVICE_FOLDER)/init.omap4430.rc:/root/init.omap4430.rc \
-    $(DEVICE_FOLDER)/init.omap4430.usb.rc:/root/init.omap4430.usb.rc
+    $(DEVICE_FOLDER)/init.omap4430.usb.rc:/root/init.omap4430.usb.rc \
+    $(DEVICE_FOLDER)/ueventd.omap4430.rc:/root/ueventd.omap4430.rc
 
 # Prebuilt system/bin
 PRODUCT_COPY_FILES += \
