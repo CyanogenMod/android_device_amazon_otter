@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/fstab.otter:/root/fstab.omap4430 \
     $(DEVICE_FOLDER)/init.omap4430.rc:/root/init.omap4430.rc \
     $(DEVICE_FOLDER)/init.omap4430.usb.rc:/root/init.omap4430.usb.rc \
+    $(DEVICE_FOLDER)/init.recovery.omap4430.rc:/root/init.recovery.omap4430.rc \
     $(DEVICE_FOLDER)/ueventd.omap4430.rc:/root/ueventd.omap4430.rc
 
 # Prebuilt system/bin
@@ -48,9 +49,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/lib/libidme.so:/system/lib/libidme.so
 
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(DEVICE_FOLDER)/twrp.fstab:recovery/root/etc/twrp.fstab
+# Recovery USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    usb.vendor=1949 \
+    usb.product.adb=0006 \
+    usb.product.mtpadb=0006
 
 # Mark as low ram device
 PRODUCT_PROPERTY_OVERRIDES += \
