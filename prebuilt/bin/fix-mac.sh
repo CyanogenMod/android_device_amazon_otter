@@ -11,3 +11,4 @@ if bbx [ ! -f "$NVS_BIN" ]; then
     bbx mount -o remount,ro /system
 fi
 
+insmod /system/lib/modules/wl12xx_sdio.ko
