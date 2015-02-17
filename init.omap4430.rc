@@ -14,9 +14,6 @@ on init
     symlink /storage/sdcard0 /mnt/sdcard
 
 on fs
-    # zRAM read only 1 page at a time
-    write /proc/sys/vm/page-cluster 0
-
     mkdir /factory 0775 radio radio
     mount_all /fstab.omap4430
     swapon_all /fstab.omap4430
