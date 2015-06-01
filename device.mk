@@ -54,10 +54,6 @@ ADDITIONAL_BUILD_PROPERTIES += \
     usb.product.adb=0006 \
     usb.product.mtpadb=0006
 
-# Mark as low ram device
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.config.low_ram=true
-
 # Dalvik settings
 ADDITIONAL_BUILD_PROPERTIES += \
     dalvik.vm.heapstartsize=5m \
